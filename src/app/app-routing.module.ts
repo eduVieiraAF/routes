@@ -7,7 +7,8 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
-  { path: '404', component: ErrorPageComponent }
+  { path: '404', component: ErrorPageComponent },
+  { path: '**', redirectTo: '/404' }
 
 ];
 
